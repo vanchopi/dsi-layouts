@@ -101,6 +101,25 @@ a{
     border-right: 2px solid rgba(210, 215, 217, 0.75);
 }
 
+.main-cont.for_item .text-cont-left .text-cont-left-description{
+    clear: both;
+    height: 100%;
+}
+
+.main-cont.for_item .text-cont-left hr.major{
+    clear: both;
+}
+
+.for-content-img img{
+    width: 100%;
+}
+
+.main-cont.for_item .text-cont-left .image.for-content-img{
+    max-width: 50%;
+    margin-right: 1em;
+    float: left;
+}
+
 .main-cont.for_item .serts-cont{
     vertical-align: top;
     width: calc(100px);
@@ -128,9 +147,15 @@ a{
 }
 
 @media screen and (max-width: 636px){
+    .main-cont.for_item .text-cont-left .image.for-content-img{
+        max-width: 90%;
+        margin: auto;;
+        float: inherit;
+    }
     .main-cont.for_item .text-cont-left{
         width: 100%;
         display: block;
+        border-right: none;
     }
     .main-cont.for_item .serts-cont{
         width: 100%;
