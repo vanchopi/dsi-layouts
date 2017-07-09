@@ -21,6 +21,30 @@ a{
 	margin-bottom: 30px;
 }
 
+.desc-wrap{
+    position: relative;
+}
+
+.desc-wrap .menu-top-contacts{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+.desc-wrap .menu-top-contacts span{
+    color: white;
+    font-size: 20px;    
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.desc-wrap .menu-top-contacts span:nth-child(2n){
+    font-weight: 400;
+}
+
 #menu .menu-cont img{
 	width: 100%;
 	border-radius: 4px;
