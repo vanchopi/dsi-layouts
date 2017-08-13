@@ -115,7 +115,7 @@
 			// Toggle.
 				
 
-					$('<a href="#sidebar" class="toggle">Toggle</a>')
+					$('<a href="#sidebar" class="toggle" data-toggle="tooltip" title="Нажмите, чтобы открыть меню" data-placement="bottom right" data-trigger="hover">Toggle</a>')
 						.appendTo($sidebar)
 						.on('click', function(event) {
 

@@ -448,7 +448,7 @@ a.image img {
     display: block;
     width: 100%;
     margin-bottom: 15px;
-    height: 50px;
+    height: 50px !important;
     transition: opacity 0.5s ease, display 0.5s ease;   
 }
 
@@ -610,13 +610,16 @@ a.image img {
     text-align: center;
     height: 50px;
     padding-left: 0 !important;
+    display: flex;
 }
 
 .menu-top-line ul li a{
     color: white;
-    border-bottom: 1px solid white;
+    /*border-bottom: 1px solid white !important;*/
+    border-bottom: none;
     vertical-align: middle;
-    vertical-align: -webkit-baseline-middle;
+    vertical-align: -webkit-baseline-middle; 
+    margin: auto;
 }
 
 .menu-top-line ul li span{
@@ -809,6 +812,84 @@ ul.menu-btns{
 }
 
 .desc-wrap.mobile{
+    display: none;
+}
+
+.dropdown-menu{
+    background-color: rgba(103, 110, 116, 1);
+    transition: height 1s ease;
+}
+
+.menu-top-line ul .dropdown-menu li{
+    display: block;    
+    width: 100%;
+    text-align: left;
+    border-bottom: none;
+}
+
+.menu-top-line ul li .dropdown-menu a{
+    border-bottom: none !important;
+}
+
+.dropdown-menu > li > a{
+    padding: 5px 20px;
+    margin: auto 0;
+    width: calc(100%);
+}
+
+.dropdown .dropdown-menu li {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.dropdown-menu{
+    padding: 0;
+    border: none;
+    transition: all .5s ease;
+}
+
+.dropdown-toggle:before{
+    content: '\f078';
+    font-family: FontAwesome;
+    position: absolute;
+    margin-right: 15%;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    color: white;
+    right: 0;
+}
+
+.dropdown.open .dropdown-toggle:before{
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+a.dropdown-toggle:hover:before{
+    color: #f56a6a !important;   
+}
+
+.dropdown.open .dropdown-menu li{
+    height: auto;
+    min-height: 50px;
+    overflow: inherit;
+}
+
+.dropdown.open .dropdown-menu{
+    padding: 5px 0;
+    border: 1px solid rgba(0,0,0,.15);
+}
+
+.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+a.dropdown-toggle{
+    padding-right: 40px;
+}
+
+.tooltip.bottom .tooltip-arrow{
     display: none;
 }
 

@@ -19,5 +19,9 @@ $(document).ready(function(){
 			elem.addClass('fxd');
 		}
 	})
+
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 })
 
