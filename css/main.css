@@ -873,7 +873,7 @@ a.dropdown-toggle:hover:before{
 .dropdown.open .dropdown-menu li{
     height: auto;
     min-height: 50px;
-    overflow: inherit;
+    overflow: hidden;
 }
 
 .dropdown.open .dropdown-menu{
@@ -891,6 +891,16 @@ a.dropdown-toggle{
 
 .tooltip.bottom .tooltip-arrow{
     display: none;
+}
+
+.tooltip-inner{
+    background-color: rgb(179, 179, 179);
+}
+
+.open>.dropdown-menu {
+    display: block;
+    overflow-y: scroll;
+    max-height: 500px;
 }
 
 @media screen and (max-width: 636px){
